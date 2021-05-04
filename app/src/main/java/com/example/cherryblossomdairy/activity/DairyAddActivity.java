@@ -27,6 +27,7 @@ public class DairyAddActivity extends AppCompatActivity{
         adddairy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Connector.getDatabase();//自动创建litepal数据库
                 String title=editText1.getText().toString();
                 String content=editText2.getText().toString();
                 Dairy dairy=new Dairy();
