@@ -1,4 +1,4 @@
-package com.example.cherryblossomdairy;
+package com.example.cherryblossomdairy.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,9 @@ import android.view.WindowManager;
 import android.widget.TextView;
 import java.util.Timer;
 import  android.content.Intent;
+
+import com.example.cherryblossomdairy.R;
+
 import java.util.TimerTask;
 
 
@@ -61,7 +64,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv:
-                Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+                Intent intent = new Intent(WelcomeActivity.this,MainActivity.class);
                 startActivity(intent);
                 finish();
                 if (runnable != null) {
