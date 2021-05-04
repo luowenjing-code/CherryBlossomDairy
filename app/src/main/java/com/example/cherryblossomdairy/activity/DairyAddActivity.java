@@ -1,7 +1,5 @@
 package com.example.cherryblossomdairy.activity;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,10 +8,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cherryblossomdairy.Dairy;
+import com.example.cherryblossomdairy.bean.Dairy;
 import com.example.cherryblossomdairy.R;
 
-import org.litepal.LitePal;
 import org.litepal.tablemanager.Connector;
 
 public class DairyAddActivity extends AppCompatActivity{

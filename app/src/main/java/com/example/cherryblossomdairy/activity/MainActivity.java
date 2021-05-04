@@ -10,18 +10,15 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.example.cherryblossomdairy.Dairy;
 import com.example.cherryblossomdairy.R;
 import com.example.cherryblossomdairy.adapter.DairyAdapter;
+import com.example.cherryblossomdairy.bean.Dairy;
 
 import org.litepal.LitePal;
-import org.litepal.crud.LitePalSupport;
 import org.litepal.tablemanager.callback.DatabaseListener;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -49,10 +46,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         /*======================================================*/
         Button button = (Button) findViewById(R.id.make_dairy);
         button.setOnClickListener(this);
-        /*RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recycle);
+        /*List<Dairy>a=LitePal.findAll(Dairy.class);
+        RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recycle);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
-        DairyAdapter dairyAdapter=new DairyAdapter();
+        DairyAdapter dairyAdapter=new DairyAdapter(a);
         recyclerView.setAdapter(dairyAdapter);*/
     }
 

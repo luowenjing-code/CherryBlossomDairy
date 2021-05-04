@@ -7,10 +7,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.cherryblossomdairy.Dairy;
+import com.example.cherryblossomdairy.bean.Dairy;
 import com.example.cherryblossomdairy.R;
-
-import org.litepal.LitePal;
 
 import java.util.ArrayList;
 import java.util.List;

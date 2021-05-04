@@ -1,4 +1,4 @@
-package com.example.cherryblossomdairy;
+package com.example.cherryblossomdairy.bean;
 
 import org.litepal.crud.LitePalSupport;
 import org.litepal.exceptions.DataSupportException;

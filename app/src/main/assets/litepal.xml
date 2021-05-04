@@ -3,6 +3,6 @@
     <dbname value="Cherry Blossom Dairy"></dbname>
     <version value="1"></version>
     <liat>
-        <mapping class="com.example.cherryblossomdairy.Dairy"></mapping>
+        <mapping class="com.example.cherryblossomdairy.bean.Dairy"></mapping>
     </liat>
 </litepal>
